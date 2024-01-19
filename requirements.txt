@@ -1,0 +1,7 @@
+# Install this package
+-e .
+# Install additional dependencies
+
+# Install helpful dependencies
+jupyter==1.0.0
+flake8==7.0.0
