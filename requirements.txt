@@ -1,0 +1,6 @@
+# Install this package
+-e .
+# Install additional dependencies
+
+# Install helpful dependencies
+jupyter==1.0.0
