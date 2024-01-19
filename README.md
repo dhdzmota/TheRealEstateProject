@@ -31,8 +31,8 @@ Project Organization
 
 Main contributors:
 ------------
-- Elí González ()
-- Daniel Hernández (dhdzmota@gmail.com)
+- Elí González Zequeida (eligoze75@gmail.com)
+- Daniel Hernández Mota (dhdzmota@gmail.com)
 
 Installation:
 ------------
