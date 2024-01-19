@@ -5,11 +5,13 @@ Project Organization
 ------------
 
     ├── README.md           <- The top-level README for developers using this project.
+    │
+    ├── ReleaseNotes.md           <- The notes for keeping track of what was done on each iteration. 
+    │
     ├── data
     │       ├── interim        <- Intermediate data that has been transformed.
     │       ├── processed      <- The final, canonical data sets for modeling.
     │       └── raw            <- The original, immutable data dump.
-    │
     │
     ├── notebooks           <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                          the creator's initials, and a short `-` delimited description, e.g.
