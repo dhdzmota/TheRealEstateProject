@@ -125,6 +125,9 @@ def foursquare_search_places(key_word=None,
     - sort: string. Specifies the order in which results are listed.
     Possible values are: relevance (default), rating, distance.
     - limit: int. The number of results to return, up to 50. Defaults to 50.
+
+    About respose fields:
+    https://location.foursquare.com/developer/reference/response-fields
     '''
     params = list(
         foursquare_search_places.__code__.co_varnames
