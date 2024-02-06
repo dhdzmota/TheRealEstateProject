@@ -1,2 +1,4 @@
 inegi_denue:
   token : YOURTOKEN
+foursquare:
+  token : YOURTOKEN
