@@ -50,7 +50,7 @@ def inegi_denue_search_places(method='Buscar',
         print(f"Request error: {e}")
 
 
-def foursquare_search_places(key_word=None,
+def foursquare_search_places(query=None,
                              latitude=None,
                              longitude=None,
                              radio=2500,
@@ -135,11 +135,12 @@ def foursquare_search_places(key_word=None,
     with open(CONFIG_PATH, "r") as f:
         token = yaml.full_load(f)['foursquare']['token']
     url = "https://api.foursquare.com/v3/places/search?"
-    ll = f"{latitude},{longitude}"
     headers = {"accept": "application/json",
                "Authorization": token}
-    params.remove('longitude')
-    params = [v.replace('latitude', 'll') for v in params]
+    if not None in (latitude, longitude):
+        ll = f"{latitude},{longitude}"
+        params.remove('longitude')
+        params = [v.replace('latitude', 'll') for v in params]
     for p in params:
         if eval(p) is not None:
             url += f"{p}={eval(p)}&"
